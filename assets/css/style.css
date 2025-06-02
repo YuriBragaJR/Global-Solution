@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Removendo estilos padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Resetando estilos padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Garantindo que botões e inputs tenham um estilo mais uniforme */
+button, input, textarea {
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+}
+
+
+.logo {
+    width: 200px;
+    align-self: center;
+}
+
+.hero { 
+    background: #ff4b4b; 
+    color: white; 
+    padding: 60px 20px; 
+    text-align: center;
+    background-image: url(../image/pexels-kelly-1179532-19063392.jpg);
+    text-shadow: 0 0 8px #000000 ;
+}
+.n1 {
+    background-image: url(../image/emergenci-msg.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.n2 {
+    background-image: url(../image/aviso.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.n3 {
+    background-image: url(../image/ocorrencia.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.n4 {
+    background-image: url(../image/ajuda.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.n5 {
+    background-image: url(../image/primeiros-socorros.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.n6 {
+    background-image: url(../image/video.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+#map { 
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+}
+.section { 
+    padding: 40px 20px; 
+}
+footer { 
+    background: #222; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.icone-rede-social:hover {
+    color: #0dff00;
+    transition: 0.5s;
+}
