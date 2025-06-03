@@ -1,4 +1,4 @@
-        let map = L.map('map').setView([-23.63, -46.57], 13); // São Caetano do Sul
+        let map = L.map('map').setView([-23.625, -46.565], 15); // São Caetano do Sul
 
         let googleMapsTileLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
             attribution: '&copy; Google'
