@@ -32,7 +32,8 @@ button, input, textarea {
 
 
 .logo {
-    width: 200px;
+    width: 250px;
+    height: auto;
     align-self: center;
 }
 
