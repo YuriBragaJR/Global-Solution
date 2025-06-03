@@ -1,23 +1,21 @@
-        document.addEventListener("DOMContentLoaded", function() {
-            // Inicializa o mapa
-            var map = L.map('map').setView([-23.6807, -46.5000], 12); // Coordenadas iniciais (São Paulo)
+        let map = L.map('map').setView([-23.63, -46.57], 13); // São Caetano do Sul
 
-            // Adiciona camada de mapa padrão
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; OpenStreetMap contributors'
-            }).addTo(map);
+        let googleMapsTileLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            attribution: '&copy; Google'
+        });
 
-            // Lista de locais seguros com coordenadas
-            var locaisSeguros = [
-                { nome: "Abrigo Central", lat: -23.681, lng: -46.500 },
-                { nome: "Hospital de Emergência", lat: -23.685, lng: -46.510 },
-                { nome: "Ponto de Apoio Comunitário", lat: -23.690, lng: -46.520 }
-            ];
+        googleMapsTileLayer.addTo(map);
 
-            // Adiciona marcadores para cada local seguro
-            locaisSeguros.forEach(function(local) {
-                L.marker([local.lat, local.lng]).addTo(map)
-                    .bindPopup("📍 " + local.nome)
-                    .openPopup();
-            });
+        let locaisSeguros = [
+            { nome: "Hospital São Caetano", lat: -23.6255, lng: -46.5668 },
+            { nome: "Pronto Socorro Municipal", lat: -23.6201, lng: -46.5650 },
+            { nome: "Centro de Abrigo Emergencial", lat: -23.6302, lng: -46.5705 },
+            { nome: "Corpo de Bombeiros", lat: -23.6267, lng: -46.5712 },
+            { nome: "Unidade de Resgate", lat: -23.6283, lng: -46.5608 }
+        ];
+
+        locaisSeguros.forEach(function(local) {
+            L.marker([local.lat, local.lng])
+                .addTo(map)
+                .bindPopup(local.nome);
         });
