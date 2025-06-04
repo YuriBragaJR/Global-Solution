@@ -72,8 +72,10 @@ button, input, textarea {
     padding-bottom: 200px;
 }
 
-.pad-bottom {
-    padding-bottom: 200px;
+
+.sc-down {
+    overflow: scroll;
+    height: 250px;
 }
 
 .n2 {
@@ -115,6 +117,15 @@ button, input, textarea {
     height: 500px;
     width: 80%;
     margin-top: 20px;
+}
+
+.bg-mapa {
+    background-color: rgb(172, 255, 183);
+}
+
+.list-pcr {
+    margin: 0;
+    padding: 0;
 }
 
 

@@ -94,18 +94,23 @@
             <div class="d-md-flex gap-5 mt-5">
                 <div class="card w-100">
                     <div class="card-header bg-black text-white fw-medium n2">Avisos Oficiais</div>
-                    <div class="card-body">
+                    <div class="card-body sc-down">
                         <p><strong>Defesa Civil:</strong> Nova tempestade se aproximando. Evacuação recomendada em áreas de risco.</p>
+                        <p><strong>Defesa Civil:</strong> Atenção, moradores! Há previsão de chuva intensa nas próximas horas. Risco de alagamentos e deslizamentos. Evite áreas de risco e fique atento à orientações. Em caso de emergência, ligue para o 199
+</p>
                     </div>
                 </div>
                 <br>
                 <!-- Relato de Ocorrências -->
                 <div class="card w-100">
                     <div class="card-header bg-black text-light fw-medium n3">Relato de Ocorrências</div>
-                    <div class="card-body">
+                    <div class="card-body sc-down">
                         <ul class="list-group mt-3" id="ocorrencias">
-                            <li class="list-group-item">Exemplo: Enchente na Av. Central - Última atualização: 10 min atrás</li>
-                            <li class="list-group-item">Exemplo: Falta de energia na Av. Central - Última atualização: 20 min atrás</li>
+                            <li class="list-group-item"><p class="fw-bold">25 Notificações:</p> Enchente na Av. Central - Última atualização: 10 min atrás</li>
+                            <li class="list-group-item"><p class="fw-bold">14 Notificações:</p> Falta de energia na Av. Central - Última atualização: 20 min atrás</li>
+                            <li class="list-group-item"><p class="fw-bold">10 Notificações:</p> Nível do rio atingindo a cota de emergência - Evacue áreas de risco imediatamente!
+</li>
+
                         </ul>
                     </div>
                 </div>
@@ -115,37 +120,44 @@
     
 
     <!-- Mapa Interativo -->
+     <div class=" bg-mapa">
     <section class="container pad" id="mapa">
         <h2>Mapa Interativo - Locais Seguros</h2>
         <p>Encontre abrigos, equipes de resgate e áreas de risco em tempo real.</p>
         <p>OBS. Os locais seguros estão marcados com o icone <i class="fa-solid fa-location-dot fs-3" style="color: #4798d0;"></i></p>
         <div class="ms-4 ms-md-0" id="map" aria-label="Mapa interativo com locais seguros"></div>
     </section>
+    </div>
 
 
 
     <!-- Recursos Educativos -->
-    <section class="educativo bg-light pad">
-        <section class="container" id="educativo">
+    <section class="educativo pad">
+        <article class="container" id="educativo">
             <h1>Recursos Educativos</h1>
             <p>Dicas e orientações para enfrentar desastres naturais com segurança.</p>
 
             <!-- Guias e Primeiros Socorros -->
             <div class="card">
                 <div class="card-header bg-info text-white fw-medium n5">Primeiros Socorros em Emergências</div>
-                <div class="card-body">
-                    <p>Saiba como agir rapidamente em situações críticas.</p>
-                    <ul>
-                        <li><i class="fa-solid fa-truck-medical"></i> Como fazer reanimação cardiorrespiratória (RCP).</li>
-                        <li><i class="fa-solid fa-fire"></i> Medidas para lidar com queimaduras e ferimentos.</li>
-                        <li><i class="fa-solid fa-suitcase-medical"></i> Como montar um kit de primeiros socorros.</li>
-                    </ul>
-                    <a href="./assets/arquivos/Guia_Primeiros_Socorros.pdf" class="btn btn-info" download="Guia_Primeiros_Socorros.pdf">Baixar Guia de Primeiros Socorros</a>
+                <div class="d-md-flex">
+                    <div class="card-body border">
+                        <p>Saiba como agir rapidamente em situações críticas.</p>
+                        <ul class="list-pcr">
+                            <li><i class="fa-solid fa-truck-medical"></i> Como fazer reanimação cardiorrespiratória (RCP).</li>
+                            <li><i class="fa-solid fa-fire"></i> Medidas para lidar com queimaduras e ferimentos.</li>
+                            <li><i class="fa-solid fa-suitcase-medical"></i> Como montar um kit de primeiros socorros.</li>
+                        </ul>
+                    </div>
+                    <div class="card-body border">
+                        <p>Abaixo, disponibilizamos um arquivo PDF contendo nosso Guia de Primeiros Socorros.</p>
+                        <li class="list-group-item"><a href="./assets/arquivos/Guia_Primeiros_Socorros.pdf" class="btn btn-info" download="Guia_Primeiros_Socorros.pdf">Baixar Guia</a></li>
+                    </div>
                 </div>
             </div>
 
             <!-- Video Educativo -->
-            <div class="card my-3 pad-bottom">
+            <div class="card mt-3">
                 <div class="card-header bg-info text-dark fw-medium n6">Vídeo Educativo</div>
                 <div class="card-body">
                     <p>Aprenda com um vídeo sobre medidas de segurança em situações de emergência.</p>
@@ -155,8 +167,7 @@
                 </div>
             </div>
 
-        </div>
-        </section>
+        </article>
     </section>
 
 
