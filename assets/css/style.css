@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+
 html, body {
     width: 100%;
     height: 100%;
@@ -30,19 +31,33 @@ button, input, textarea {
     font: inherit;
 }
 
-
 .logo {
     width: 250px;
     height: auto;
     align-self: center;
 }
 
+.foto-user {
+    margin: 0 10px 0 0;
+}
+
+.hero-text {
+    margin-top: 80px;
+    height: 60%;
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    justify-content: end;
+}
+
 .hero { 
     color: white; 
     padding: 10px; 
     text-align: center;
-    background-image: url(../image/pexels-kelly-1179532-19063392.jpg);
+    background-image: url(../image/bg-hero.jpg);
     text-shadow: 0 0 8px #000000 ;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .n1 {
@@ -50,6 +65,15 @@ button, input, textarea {
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+}
+
+.pad {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.pad-bottom {
+    padding-bottom: 200px;
 }
 
 .n2 {
@@ -89,9 +113,10 @@ button, input, textarea {
 
 #map { 
     height: 500px;
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
 }
+
 
 .section { 
     padding: 40px 20px; 
@@ -107,4 +132,14 @@ footer {
 .icone-rede-social:hover {
     color: #0dff00;
     transition: 0.5s;
+}
+
+@media (min-width: 1360px) {
+    .hero-text {
+            margin-left: 10%;
+    }
+
+    .dd-menu {
+    margin-left: 100px;
+    }
 }

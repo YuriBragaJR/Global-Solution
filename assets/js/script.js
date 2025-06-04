@@ -1,7 +1,6 @@
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 
- function enviarMensagem() {
+
+function enviarMensagem() {
             let mensagem = document.getElementById("mensagem").value;
             if (mensagem.trim() !== "") {
                 let novoItem = document.createElement("li");
@@ -12,9 +11,12 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
             }
         }
 
-        function relatarOcorrencia() {
-            let novoItem = document.createElement("li");
-            novoItem.className = "list-group-item";
-            novoItem.textContent = "⚠️ Nova ocorrência reportada - Última atualização: agora";
-            document.getElementById("ocorrencias").appendChild(novoItem);
-        }
+
+            const user = {
+        nome: "Usuário",
+        autenticado: true
+    };
+
+    if (user.autenticado) {
+        document.getElementById("user-name").textContent = user.nome;
+    }
