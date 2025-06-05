@@ -81,8 +81,8 @@ button, input, textarea {
 
 
 .sc-down {
-    overflow: scroll;
-    height: 250px;
+    overflow-y: scroll;
+    height: 320px;
 }
 
 .n2 {
