@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
 }
 
-
 html, body {
     width: 100%;
     height: 100%;
@@ -35,6 +34,18 @@ button, input, textarea {
     width: 250px;
     height: auto;
     align-self: center;
+}
+
+.texto-laranja {
+    color: #FFA500;
+}
+
+.fundo-laranja {
+    background-color: #ffd68b;
+}
+
+.hover-laranja:hover {
+    color: #FFA500;
 }
 
 .hero-text {
@@ -117,7 +128,6 @@ button, input, textarea {
 
 #map { 
     height: 400px;
-
     margin-top: 20px;
 }
 
