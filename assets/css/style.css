@@ -37,10 +37,6 @@ button, input, textarea {
     align-self: center;
 }
 
-.foto-user {
-    margin: 0 10px 0 0;
-}
-
 .hero-text {
     margin-top: 80px;
     height: 60%;
@@ -112,10 +108,16 @@ button, input, textarea {
     background-position: right;
     background-size: contain;
 }
+.n7 {
+    background-image: url(../image/mapa.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
 
 #map { 
     height: 400px;
-    width: 80%;
+
     margin-top: 20px;
 }
 

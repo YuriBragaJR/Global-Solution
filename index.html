@@ -45,7 +45,7 @@
                         
                         <!-- Dropdown menu do usuario -->
                         <li class="nav-item dropdown dd-menu" data-bs-theme="dark">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fa-solid fa-circle-user fs-5 foto-user"></i> <span id="user-name">Usuário</span></a>
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fa-solid fa-circle-user fs-5 me-3"></i><span id="user-name">Usuário</span></a>
                             <ul class="dropdown-menu bg-black">
                                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user me-2"></i>Conta</a></li>
                                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear me-2"></i>Configurações</a></li>
@@ -122,13 +122,21 @@
 
     <!-- Mapa Interativo -->
     <div class=" bg-mapa">
-    <section class="container pad" id="mapa">
-        <h2>Mapa Interativo - Locais Seguros</h2>
+    <section class="container pad " id="mapa">
+        <h2>Mapa Interativo</h2>
         <p>Encontre abrigos, equipes de resgate e áreas de risco em tempo real.</p>
-        <p>OBS. Os locais seguros estão marcados com o icone <i class="fa-solid fa-location-dot fs-3" style="color: #4798d0;"></i></p>
-        <div class="ms-4 ms-md-0" id="map" aria-label="Mapa interativo com locais seguros"></div>
+        <div class="card">
+
+        <h3 class="card-header bg-dark text-light n7">Locais Seguros</h3>
+        <div class="card-body">
+        <div class="rounded border" id="map" aria-label="Mapa interativo com locais seguros"></div>
+        <p class="mt-2">OBS. Os locais seguros estão marcados com o icone <i class="fa-solid fa-location-dot fs-3" style="color: #4798d0;"></i></p>
+        </div>
+    
+    </div>
     </section>
     </div>
+    <hr>
 
 
 
@@ -145,14 +153,14 @@
                     <div class="card-body border">
                         <p>Saiba como agir rapidamente em situações críticas.</p>
                         <ul class="list-pcr fonte-ul">
-                            <li><i class="fa-solid fa-truck-medical"></i> Como fazer reanimação cardiorrespiratória (RCP).</li>
-                            <li><i class="fa-solid fa-fire"></i> Medidas para lidar com queimaduras e ferimentos.</li>
-                            <li><i class="fa-solid fa-suitcase-medical"></i> Como montar um kit de primeiros socorros.</li>
+                            <li><i class="fa-solid fa-truck-medical me-2"></i>Como fazer reanimação cardiorrespiratória (RCP).</li>
+                            <li><i class="fa-solid fa-fire me-3"></i>Medidas para lidar com queimaduras e ferimentos.</li>
+                            <li><i class="fa-solid fa-suitcase-medical me-3"></i>Como montar um kit de primeiros socorros.</li>
                         </ul>
                     </div>
                     <div class="card-body border">
                         <p>Abaixo, disponibilizamos um arquivo PDF contendo nosso Guia de Primeiros Socorros.</p>
-                        <li class="list-group-item"><a href="./assets/arquivos/Guia_Primeiros_Socorros.pdf" class="btn btn-info" download="Guia_Primeiros_Socorros.pdf"><i class="fa-solid fa-file-arrow-down me-3"></i>Baixar Guia</a></li>
+                        <li class="list-group-item"><a href="./assets/arquivos/Guia_Primeiros_Socorros.pdf" class="btn btn-info" download="Guia_Primeiros_Socorros.pdf"><i class="fa-solid fa-file-arrow-down me-2"></i>Baixar Guia</a></li>
                     </div>
                 </div>
             </div>
