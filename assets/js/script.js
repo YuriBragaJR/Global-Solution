@@ -9,7 +9,15 @@ function enviarMensagem() {
                 document.getElementById("chat").appendChild(novoItem);
                 document.getElementById("mensagem").value = "";
             }
+        
         }
+
+document.getElementById("mensagem").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+        event.preventDefault(); 
+        enviarMensagem();
+    }
+});
 
 
             const user = {
