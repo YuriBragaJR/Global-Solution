@@ -27,4 +27,5 @@ document.getElementById("mensagem").addEventListener("keydown", function(event) 
 
     if (user.autenticado) {
         document.getElementById("user-name").textContent = user.nome;
+        document.getElementById("user-name-hero").textContent = user.nome;
     }
